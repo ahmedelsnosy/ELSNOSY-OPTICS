@@ -1,0 +1,32 @@
+ body{
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgb(2, 46, 61);
+    color: #fff;
+
+}
+.form-control{
+    background-color: transparent;
+    outline: none;
+}
+ .title{
+    
+     background-image: linear-gradient(to center,rgb(3, 35, 53), rgb(0, 140, 255));
+     font-size: 5rem;
+     animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: greenyellow;
+}
+
+@keyframes typing{   
+     50%{transform:scale(1.1,1.1)
+
+    }
+    50%{color: rgb(255, 0, 0);}
+}
+.curve{
+    z-index: -1;
+}

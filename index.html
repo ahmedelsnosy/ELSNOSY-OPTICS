@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- <svg class="curve fixed-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1"
+            d="M0,128L48,138.7C96,149,192,171,288,170.7C384,171,480,149,576,165.3C672,181,768,235,864,261.3C960,288,1056,288,1152,245.3C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg> -->
+    <div class="text-center w-75 mx-auto shadow-lg">
+        <audio src="Abo3rab-٢٠١٩١٠١٥١٥٤٩١٣.mp4" autoplay loop>
+        </audio>
+        <h1 class=" text-center fw-bolder w-100 title"> ELSNOSY FOR OPTICS</h1>
+    </div>
+
+    <div class="container mt-5 ">
+
+        <label for="fullname" class="mb-3">Full Name</label>
+        <input type="text" name="fullName" required class="form-control mb-3 " id="fullname">
+
+        <label for="phone" class="mb-3">Phone</label>
+        <input type="tel" name="phone" maxlength="11" required class="form-control mb-3" id="phone"
+            placeholder="Enter your Phone">
+
+        <label for="address" class="mb-3">Address</label>
+        <input type="text" name="address" class="form-control mb-3" required id="address"
+            placeholder="Enter your Address">
+
+        <label for="date" class="mb-3 ">Date</label>
+        <input type="date" name="date" class="form-control mb-3 " disabled id="date">
+        <label for="doctor" class="mb-3 ">الدكتور</label>
+        <input type="text" name="doctor" class="form-control mb-3 " required id="doctor">
+
+        <label for="typeOfFrame" class="mb-3 ">نوع الشمبر</label>
+        <input type="text" name="typeOfFrame" class="form-control mb-3 " required id="typeOfFrame">
+
+        <label for="typeOfGlass" class="mb-3 ">نوع العدسات</label>
+        <input type="text" name="typeOfGlass" class="form-control mb-3 " required id="typeOfGlass">
+
+        <label for="price" class="mb-3">السعر </label>
+        <input type="number" name="price" class="form-control mb-3" required id="price" placeholder="Enter Price">
+
+        <label for="paidup" class="mb-3">المدفوع</label>
+        <input type="number" placeholder="المدفوع" name="paidup" class="form-control mb-3" required id="paidup">
+
+        <label for="residual" class="mb-3 ">الباقي</label>
+        <input type="number" name="residual" class="form-control mb-3 " disabled placeholder="الباقي من السعر"
+            id="residual">
+
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6    mt-2  bg-danger">
+                <table class="table">
+                    <h2 class="text-center">Right</h2>
+                    <thead>
+                        <th></th>
+                        <th>SPH</th>
+                        <th>CYL</th>
+                        <th>Axis</th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            Distance
+                        </td>
+                        <td>
+                            <input type="number" name="rightSph" id="rightSph" class="w-50  form-control">
+                        </td>
+                        <td>
+                            <input type="number" name="rightCyl" id="rightCyl" class="w-50 form-control">
+                        </td>
+                        <td>
+                            <input type="number" name="rightAxis" id="rightAxis" class="w-50 form-control">
+                        </td>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 mt-2 bg-info">
+                <table class="table">
+                    <h2 class="text-center">Left</h2>
+                    <thead>
+                        <th>SPH</th>
+                        <th>CYL</th>
+                        <th>Axis</th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <input type="number" name="leftSph" id="leftSph" class="w-50 form-control">
+                        </td>
+                        <td>
+                            <input type="number" name="leftCyl" id="leftCyl" class="w-50 form-control">
+                        </td>
+                        <td>
+                            <input type="number" name="leftAxis" id="leftAxis" class="w-50 form-control">
+                        </td>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 mt-2 bg-info">
+                <table class="table">
+                    <h2 class="text-center">Reading</h2>
+                    <thead class="text-center">
+                        <th>Addition</th>
+                    </thead>
+                    <tbody class="text-center">
+                        <td>
+                            <input type="number" name="addition" id="addition" class="w-50 mx-auto form-control">
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- buttons -->
+        <div class="text-center">
+            <button id="change" class=" btn text-white bg-dark mt-3" onclick="addClient() ">ADD CLIENT</button>
+            <button class="btn btn-outline-info mt-3 ms-2 px-5 text-black" onclick="print()">Print</button>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="d-flex justify-content-center mt-5">
+        <input oninput="search(this.value)" type="text" name="search" id="search" placeholder="SEARCH BY NAME"
+            class="form-control w-50">
+    </div>
+
+    <table class="table mt-5 w-100">
+        <thead class="bg-primary border-2 border">
+
+            <th class="border-2 border">Index</th>
+            <th class="border-2 border">FullName</th>
+            <th class="border-2 border">Phone</th>
+            <th class="border-2 border">Address</th>
+            <th class="border-2 border">Date</th>
+            <th class="border-2 border">الدكتور</th>
+
+            <th class="border-2 border">نوع الشمبر</th>
+            <th class="border-2 border">نوع العدسات</th>
+            <th class="border-2 border">السعر</th>
+            <th class="border-2 border">المدفوع</th>
+            <th class="border-2 border">الباقي</th>
+
+            <th class="border-2 border">right Sph</th>
+            <th class="border-2 border">right Cyl</th>
+            <th class="border-2 border">right Axis</th>
+            <th class="border-2 border">left Sph</th>
+            <th class="border-2 border">left Cyl</th>
+            <th class="border-2 border">left Axis</th>
+            <th class="border-2 border">Addition</th>
+            <th class="border-2 border">Delet</th>
+            <th class="border-2 border">Update</th>
+
+        </thead>
+        <tbody id="content" class="tbodyfordisplay">
+
+        </tbody>
+
+    </table>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>
